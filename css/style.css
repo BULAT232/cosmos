@@ -1,0 +1,1090 @@
+@charset "UTF-8";
+/* line 1, D:/проекты/2022/Космический туризм/css/style.scss */
+*, *::after, *::before {
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box; }
+
+@font-face {
+		font-family: 'sf-pro-display';
+		src: url("../fonts/SF-Pro-Display-Regular.woff2") format("woff2"), url("../fonts/SF-Pro-Display-Regular.woff") format("woff");
+		font-style: normal;
+		font-weight: normal;
+		font-display: swap; }
+
+@font-face {
+		font-family: 'sf-pro-display';
+		src: url("../fonts/SF-Pro-Display-Bold.woff2") format("woff2"), url("../fonts/SF-Pro-Display-Bold.woff") format("woff");
+		font-style: normal;
+		font-weight: bold;
+		font-display: swap; }
+
+@font-face {
+		font-family: 'spaceagecyrillic';
+		src: url("../fonts/spaceagecyrillic-regular.woff") format("woff2"), url("../fonts/spaceagecyrillic-regular.woff") format("woff");
+		font-style: normal;
+		font-weight: bold;
+		font-display: swap; }
+
+/* line 32, D:/проекты/2022/Космический туризм/css/style.scss */
+body {
+		font-family: 'sf-pro-display';
+		font-size: 16px;
+		line-height: 19px;
+		font-weight: normal;
+		color: #fff; }
+
+/* line 40, D:/проекты/2022/Космический туризм/css/style.scss */
+button {
+		border: none;
+		background: transparent;
+		cursor: pointer;
+		color: inherit; }
+
+/* line 47, D:/проекты/2022/Космический туризм/css/style.scss */
+a {
+		color: inherit;
+		text-decoration: none; }
+
+/* line 52, D:/проекты/2022/Космический туризм/css/style.scss */
+.container {
+		max-width: 1220px;
+		margin: 0 auto;
+		padding: 0 10px; }
+
+/* line 58, D:/проекты/2022/Космический туризм/css/style.scss */
+.title {
+		font-family: 'spaceagecyrillic';
+		padding: 100px 0;
+		font-size: 48px;
+		line-height: 48px;
+		font-weight: 400; }
+
+/* line 66, D:/проекты/2022/Космический туризм/css/style.scss */
+.header {
+		background-image: url(../img/header-bg.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover; }
+
+/* line 73, D:/проекты/2022/Космический туризм/css/style.scss */
+.header__inner {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		min-height: 100vh; }
+
+/* line 80, D:/проекты/2022/Космический туризм/css/style.scss */
+.header__top {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		padding: 75px 0 30px; }
+
+/* line 87, D:/проекты/2022/Космический туризм/css/style.scss */
+.menu__list {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex; }
+
+/* line 91, D:/проекты/2022/Космический туризм/css/style.scss */
+.menu__item {
+		margin-right: 30px; }
+
+/* line 95, D:/проекты/2022/Космический туризм/css/style.scss */
+.menu__link {
+		text-transform: uppercase;
+		font-size: 18px;
+		line-height: 18px;
+		line-height: 21px;
+		-webkit-transition: color .3s linear;
+		transition: color .3s linear; }
+
+/* line 104, D:/проекты/2022/Космический туризм/css/style.scss */
+.menu__link:hover {
+		color: #CB0E0E; }
+
+/* line 108, D:/проекты/2022/Космический туризм/css/style.scss */
+.phone {
+		font-size: 24px;
+		line-height: 29px;
+		margin-left: auto; }
+
+/* line 114, D:/проекты/2022/Космический туризм/css/style.scss */
+.login {
+		margin-right: 134px;
+		margin-left: 22px; }
+
+/* line 119, D:/проекты/2022/Космический туризм/css/style.scss */
+.header__content {
+		max-width: 600px; }
+
+/* line 123, D:/проекты/2022/Космический туризм/css/style.scss */
+.header__title {
+		font-family: 'spaceagecyrillic';
+		font-size: 60px;
+		line-height: 60px;
+		font-weight: 400;
+		margin-bottom: 20px; }
+
+/* line 131, D:/проекты/2022/Космический туризм/css/style.scss */
+.header__title span {
+		font-size: 110px; }
+
+/* line 135, D:/проекты/2022/Космический туризм/css/style.scss */
+.header__text {
+		font-size: 24px;
+		line-height: 29px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		margin-bottom: 50px; }
+
+/* line 143, D:/проекты/2022/Космический туризм/css/style.scss */
+.header__btn {
+		font-size: 24px;
+		line-height: 29px;
+		text-transform: uppercase;
+		text-align: center;
+		border: 1px solid #fff;
+		width: 100%;
+		padding: 15px 10px 16px; }
+
+/* line 153, D:/проекты/2022/Космический туризм/css/style.scss */
+.header__description {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
+		margin-top: 40px;
+		margin-bottom: 5%; }
+
+/* line 160, D:/проекты/2022/Космический туризм/css/style.scss */
+.header__description-text {
+		width: 165px;
+		font-size: 14px;
+		line-height: 17px; }
+
+/* line 166, D:/проекты/2022/Космический туризм/css/style.scss */
+.header__description-text + .header__description-text {
+		margin-left: 52px; }
+
+/* line 170, D:/проекты/2022/Космический туризм/css/style.scss */
+.about {
+		background: url(../img/about-bg.jpg);
+		width: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover; }
+
+/* line 178, D:/проекты/2022/Космический туризм/css/style.scss */
+.about__item {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		padding-bottom: 150px; }
+
+/* line 186, D:/проекты/2022/Космический туризм/css/style.scss */
+.about__item:nth-child(3) {
+		padding-bottom: 86px; }
+
+/* line 190, D:/проекты/2022/Космический туризм/css/style.scss */
+.about__item:nth-child(odd) {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: reverse;
+		    -ms-flex-direction: row-reverse;
+		        flex-direction: row-reverse; }
+
+/* line 193, D:/проекты/2022/Космический туризм/css/style.scss */
+.about__img {
+		max-width: 100%; }
+
+/* line 196, D:/проекты/2022/Космический туризм/css/style.scss */
+.about__content {
+		width: 600px; }
+
+/* line 199, D:/проекты/2022/Космический туризм/css/style.scss */
+.about__content-title {
+		font-size: 30px;
+		line-height: 36px;
+		font-weight: 700;
+		margin-bottom: 5px; }
+
+/* line 205, D:/проекты/2022/Космический туризм/css/style.scss */
+.about__content-subtitle {
+		font-size: 12px;
+		line-height: 14px;
+		font-weight: 400;
+		color: #036cca;
+		margin-bottom: 30px;
+		text-transform: uppercase; }
+
+/* line 213, D:/проекты/2022/Космический туризм/css/style.scss */
+.about__content-text {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		margin-bottom: 50px; }
+
+/* line 219, D:/проекты/2022/Космический туризм/css/style.scss */
+.about__content-text p {
+		width: 165px; }
+
+/* line 223, D:/проекты/2022/Космический туризм/css/style.scss */
+.about__table {
+		margin-bottom: 50px; }
+
+/* line 226, D:/проекты/2022/Космический туризм/css/style.scss */
+.about__table-caption {
+		caption-side: bottom;
+		text-align: left;
+		margin-top: 20px;
+		font-size: 12px;
+		line-height: 14px; }
+
+/* line 234, D:/проекты/2022/Космический туризм/css/style.scss */
+.about__table-tr {
+		border: 1px solid #fff;
+		border-left: none;
+		border-right: none; }
+
+/* line 240, D:/проекты/2022/Космический туризм/css/style.scss */
+.about__table-tr + .about__table-tr {
+		font-size: 36px;
+		line-height: 43px;
+		font-size: bold;
+		text-align: center; }
+
+/* line 247, D:/проекты/2022/Космический туризм/css/style.scss */
+.about__table-td {
+		padding: 10px 30px 10px 0; }
+
+/* line 251, D:/проекты/2022/Космический туризм/css/style.scss */
+.about__table-td span {
+		font-size: 14px;
+		line-height: 17px;
+		display: block; }
+
+/* line 257, D:/проекты/2022/Космический туризм/css/style.scss */
+.button {
+		text-transform: uppercase;
+		border: 1px solid #fff;
+		font-size: 18px;
+		line-height: 21px;
+		padding: 20px 45px; }
+
+/* line 265, D:/проекты/2022/Космический туризм/css/style.scss */
+.how-to {
+		background-image: url(../img/howto-bg.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		padding-bottom: 100px;
+		width: 100%; }
+
+/* line 274, D:/проекты/2022/Космический туризм/css/style.scss */
+.how-to__box {
+		text-align: center;
+		cursor: pointer;
+		overflow: visible;
+		font-size: 18px; }
+
+/* line 281, D:/проекты/2022/Космический туризм/css/style.scss */
+.how-to__box circle, .how-to__box text, foreignObject {
+		-webkit-transition: all 0.5s linear;
+		transition: all 0.5s linear; }
+
+/* line 285, D:/проекты/2022/Космический туризм/css/style.scss */
+.how-to__box g:hover circle {
+		r: 20px;
+		fill: #036cca; }
+
+/* line 290, D:/проекты/2022/Космический туризм/css/style.scss */
+.how-to__box g:hover text {
+		font-size: 36px;
+		fill: #036cca; }
+
+/* line 295, D:/проекты/2022/Космический туризм/css/style.scss */
+.how-to__box g:hover foreignObject {
+		font-size: 22px;
+		color: #036cca; }
+
+/* line 300, D:/проекты/2022/Космический туризм/css/style.scss */
+foreignObject {
+		text-align: left; }
+
+/* line 304, D:/проекты/2022/Космический туризм/css/style.scss */
+.to-book {
+		background-image: url(../img/to-book-bg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top center;
+		height: 100vh; }
+
+/* line 312, D:/проекты/2022/Космический туризм/css/style.scss */
+.to-book__inner {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between; }
+
+/* line 317, D:/проекты/2022/Космический туризм/css/style.scss */
+.to-book__text {
+		width: 165px;
+		font-size: 14px;
+		line-height: 17px;
+		margin-top: 100px;
+		margin-left: auto;
+		margin-right: 52px; }
+
+/* line 326, D:/проекты/2022/Космический туризм/css/style.scss */
+.to-book__text + .to-book__text {
+		margin-right: 0;
+		margin-left: 0; }
+
+/* line 332, D:/проекты/2022/Космический туризм/css/style.scss */
+.invo {
+		background-image: url(../img/info-bg.jpg);
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-bottom: 100px; }
+
+/* line 345, D:/проекты/2022/Космический туризм/css/style.scss */
+.special-offer__inner {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between; }
+
+/* line 349, D:/проекты/2022/Космический туризм/css/style.scss */
+.special-offer__item {
+		width: 500px; }
+
+/* line 353, D:/проекты/2022/Космический туризм/css/style.scss */
+.special-offer__item-box {
+		min-height: 400px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		border: 1px solid #fff;
+		margin-bottom: 25px;
+		padding: 40px 75px;
+		text-align: center; }
+
+/* line 364, D:/проекты/2022/Космический туризм/css/style.scss */
+.special-offer__item-text {
+		margin: 0 auto;
+		font-size: 24px;
+		line-height: 29px;
+		width: 236px; }
+
+/* line 371, D:/проекты/2022/Космический туризм/css/style.scss */
+.special-offer__item-text span {
+		color: #CB0E0E; }
+
+/* line 376, D:/проекты/2022/Космический туризм/css/style.scss */
+.special-offer__old-price {
+		text-align: right;
+		font-size: 14px;
+		line-height: 17px;
+		margin-bottom: 16px;
+		position: relative; }
+
+/* line 384, D:/проекты/2022/Космический туризм/css/style.scss */
+.special-offer__old-price::before {
+		content: "";
+		position: absolute;
+		top: 7px;
+		right: 0;
+		width: 65px;
+		height: 2px;
+		background-color: #CB0E0E;
+		-webkit-transform: rotate(15deg);
+		        transform: rotate(15deg); }
+
+/* line 395, D:/проекты/2022/Космический туризм/css/style.scss */
+.special-offer__new-price {
+		font-size: 48px;
+		line-height: 57px; }
+
+/* line 399, D:/проекты/2022/Космический туризм/css/style.scss */
+.special-offer__btn {
+		width: 100%; }
+
+/* line 403, D:/проекты/2022/Космический туризм/css/style.scss */
+.services {
+		padding-bottom: 200px; }
+
+/* line 407, D:/проекты/2022/Космический туризм/css/style.scss */
+.services__inner {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between; }
+
+/* line 411, D:/проекты/2022/Космический туризм/css/style.scss */
+.services__box-list {
+		width: 620px;
+		margin-right: 80px;
+		font-size: 24px;
+		line-height: 29px; }
+
+/* line 417, D:/проекты/2022/Космический туризм/css/style.scss */
+.services__list-title {
+		margin-bottom: 25px; }
+
+/* line 421, D:/проекты/2022/Космический туризм/css/style.scss */
+.services__list {
+		list-style: none;
+		margin-bottom: 25px; }
+
+/* line 425, D:/проекты/2022/Космический туризм/css/style.scss */
+.services__list-item {
+		padding-left: 36px;
+		position: relative; }
+
+/* line 430, D:/проекты/2022/Космический туризм/css/style.scss */
+.services__list-item::before {
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		background-color: #fff;
+		border-radius: 50%;
+		left: 0;
+		top: 4px; }
+
+/* line 441, D:/проекты/2022/Космический туризм/css/style.scss */
+.services__description {
+		font-size: 12px;
+		line-height: 14px; }
+
+/* line 445, D:/проекты/2022/Космический туризм/css/style.scss */
+.services__buttons {
+		width: 500px; }
+
+/* line 449, D:/проекты/2022/Космический туризм/css/style.scss */
+.services__btn {
+		width: 100%; }
+
+/* line 453, D:/проекты/2022/Космический туризм/css/style.scss */
+.services__btn--first {
+		margin-bottom: 50px;
+		position: relative; }
+
+/* line 458, D:/проекты/2022/Космический туризм/css/style.scss */
+.services__btn--first::before {
+		content: "";
+		position: absolute;
+		bottom: 43px;
+		right: 0;
+		background-image: url(../img/services-login.png);
+		width: 192px;
+		height: 150px; }
+
+/* line 468, D:/проекты/2022/Космический туризм/css/style.scss */
+.sliedr {
+		text-align: center; }
+
+/* line 471, D:/проекты/2022/Космический туризм/css/style.scss */
+.slider__inner {
+		margin-bottom: 50px;
+		border: 1px solid #fff;
+		padding: 100px 0; }
+
+/* line 480, D:/проекты/2022/Космический туризм/css/style.scss */
+.slider__box-img {
+		margin: 0 auto; }
+
+/* line 483, D:/проекты/2022/Космический туризм/css/style.scss */
+.slider__description {
+		font-family: 'spaceagecyrillic';
+		font-size: 24px;
+		line-height: 30px; }
+
+/* line 489, D:/проекты/2022/Космический туризм/css/style.scss */
+.slider__arrow {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		z-index: 5; }
+
+/* line 496, D:/проекты/2022/Космический туризм/css/style.scss */
+.slider__arrow-left {
+		left: 75px; }
+
+/* line 500, D:/проекты/2022/Космический туризм/css/style.scss */
+.slider__arrow-right {
+		right: 75px; }
+
+/* line 504, D:/проекты/2022/Космический туризм/css/style.scss */
+.contacts {
+		background-color: #010203;
+		padding-bottom: 100px; }
+
+/* line 509, D:/проекты/2022/Космический туризм/css/style.scss */
+.contacts__inner {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between; }
+
+/* line 513, D:/проекты/2022/Космический туризм/css/style.scss */
+.contacts__box {
+		width: 500px; }
+
+/* line 517, D:/проекты/2022/Космический туризм/css/style.scss */
+.contacts__title {
+		padding-bottom: 46px; }
+
+/* line 521, D:/проекты/2022/Космический туризм/css/style.scss */
+.contacts__box-text {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 80px; }
+
+/* line 527, D:/проекты/2022/Космический туризм/css/style.scss */
+.contacts__form-input {
+		background-color: #010203;
+		border: none;
+		border-bottom: 1px solid #fff;
+		margin-bottom: 30px;
+		color: #fff;
+		font-family: 'sf-pro-display';
+		font-size: 14px;
+		line-height: 17px;
+		padding: 20px 0;
+		width: 100%; }
+
+/* line 540, D:/проекты/2022/Космический туризм/css/style.scss */
+.contacts__form-input::-webkit-input-placeholder {
+		color: #fff;
+		font-family: 'sf-pro-display';
+		font-size: 14px;
+		line-height: 17px; }
+.contacts__form-input::-moz-placeholder {
+		color: #fff;
+		font-family: 'sf-pro-display';
+		font-size: 14px;
+		line-height: 17px; }
+.contacts__form-input:-ms-input-placeholder {
+		color: #fff;
+		font-family: 'sf-pro-display';
+		font-size: 14px;
+		line-height: 17px; }
+.contacts__form-input::-ms-input-placeholder {
+		color: #fff;
+		font-family: 'sf-pro-display';
+		font-size: 14px;
+		line-height: 17px; }
+.contacts__form-input::placeholder {
+		color: #fff;
+		font-family: 'sf-pro-display';
+		font-size: 14px;
+		line-height: 17px; }
+
+/* line 547, D:/проекты/2022/Космический туризм/css/style.scss */
+.contacts__btn {
+		margin-top: 70px;
+		width: 100%; }
+
+/* line 552, D:/проекты/2022/Космический туризм/css/style.scss */
+.contacts__gurantees {
+		width: 500px; }
+
+/* line 555, D:/проекты/2022/Космический туризм/css/style.scss */
+.contacts__guarantees-text {
+		font-size: 24px;
+		line-height: 29px; }
+
+/* line 559, D:/проекты/2022/Космический туризм/css/style.scss */
+.contacts__guarantees-img {
+		margin-left: auto; }
+
+/* line 563, D:/проекты/2022/Космический туризм/css/style.scss */
+.footer {
+		background-image: url(../img/footer-bg.png);
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 100px 0 150px; }
+
+/* line 570, D:/проекты/2022/Космический туризм/css/style.scss */
+.footer__inner {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end; }
+
+/* line 574, D:/проекты/2022/Космический туризм/css/style.scss */
+.footer__text {
+		width: 165px;
+		margin-right: 50px; }
+
+/* line 579, D:/проекты/2022/Космический туризм/css/style.scss */
+.footer__text p + p {
+		margin-top: 50px; }
+
+/* line 583, D:/проекты/2022/Космический туризм/css/style.scss */
+.footer__menu {
+		list-style: none;
+		width: 120px;
+		margin-right: 95px; }
+
+/* line 588, D:/проекты/2022/Космический туризм/css/style.scss */
+.footer__menu-item, .footer__links-item {
+		margin-bottom: 20px; }
+
+/* line 591, D:/проекты/2022/Космический туризм/css/style.scss */
+.footer__links {
+		list-style: none;
+		width: 165px; }
+
+/* line 595, D:/проекты/2022/Космический туризм/css/style.scss */
+.footer__links-item {
+		font-size: 16px;
+		line-height: 19px; }
+
+/* line 599, D:/проекты/2022/Космический туризм/css/style.scss */
+.footer__links-link, .footer__menu-link {
+		text-transform: uppercase;
+		-webkit-transition: color .5s linear;
+		transition: color .5s linear; }
+
+/* line 604, D:/проекты/2022/Космический туризм/css/style.scss */
+.footer__links-link:hover, .footer__menu-link:hover {
+		color: #CB0E0E; }
+
+/* line 608, D:/проекты/2022/Космический туризм/css/style.scss */
+.menu-btn {
+		display: none;
+		width: 40px;
+		padding: 0%;
+		position: relative;
+		z-index: 20;
+		height: 30px; }
+
+/* line 617, D:/проекты/2022/Космический туризм/css/style.scss */
+.menu-btn span {
+		display: block;
+		height: 2px;
+		background-color: #fff;
+		position: relative; }
+
+/* line 624, D:/проекты/2022/Космический туризм/css/style.scss */
+.menu-btn span::after,
+.menu-btn span::before {
+		content: "";
+		width: 40px;
+		height: 2px;
+		background-color: #fff;
+		position: absolute;
+		left: 0;
+		top: 0; }
+
+/* line 635, D:/проекты/2022/Космический туризм/css/style.scss */
+.menu-btn span::after {
+		top: 10px; }
+
+/* line 639, D:/проекты/2022/Космический туризм/css/style.scss */
+.menu-btn span::before {
+		top: -10px; }
+
+/* line 643, D:/проекты/2022/Космический туризм/css/style.scss */
+.how-to__box-list {
+		display: none; }
+
+@media (max-width: 1160px) {
+		/* line 650, D:/проекты/2022/Космический туризм/css/style.scss */
+		.about__item {
+				display: block; }
+		/* line 653, D:/проекты/2022/Космический туризм/css/style.scss */
+		.about__content {
+				width: 100%; }
+		/* line 656, D:/проекты/2022/Космический туризм/css/style.scss */
+		.about__content-text {
+				display: block; }
+		/* line 659, D:/проекты/2022/Космический туризм/css/style.scss */
+		.about__content-text p {
+				width: 100%;
+				margin-bottom: 20px; }
+		/* line 663, D:/проекты/2022/Космический туризм/css/style.scss */
+		.about__img {
+				margin-bottom: 50px; }
+		/* line 666, D:/проекты/2022/Космический туризм/css/style.scss */
+		.about {
+				text-align: center; }
+		/* line 669, D:/проекты/2022/Космический туризм/css/style.scss */
+		.about__table {
+				width: 100%; } }
+
+@media (max-width: 1050px) {
+		/* line 675, D:/проекты/2022/Космический туризм/css/style.scss */
+		.special-offer__inner {
+				display: block; }
+		/* line 678, D:/проекты/2022/Космический туризм/css/style.scss */
+		.special-offer__item {
+				width: 100%; }
+		/* line 682, D:/проекты/2022/Космический туризм/css/style.scss */
+		.contacts__inner {
+				display: block; }
+		/* line 685, D:/проекты/2022/Космический туризм/css/style.scss */
+		.contacts__box {
+				width: 100%; }
+		/* line 688, D:/проекты/2022/Космический туризм/css/style.scss */
+		.contacts__gurantees {
+				margin: 0 auto; } }
+
+@media (max-width: 1024px) {
+		/* line 694, D:/проекты/2022/Космический туризм/css/style.scss */
+		.login {
+				margin-right: 0; }
+		/* line 698, D:/проекты/2022/Космический туризм/css/style.scss */
+		.login {
+				margin-right: 0; }
+		/* line 701, D:/проекты/2022/Космический туризм/css/style.scss */
+		.to-book__inner {
+				display: block; }
+		/* line 704, D:/проекты/2022/Космический туризм/css/style.scss */
+		.to-book__text {
+				width: 100%;
+				margin-top: 0;
+				margin-left: 0;
+				margin-right: 0;
+				margin-bottom: 30px; }
+		/* line 712, D:/проекты/2022/Космический туризм/css/style.scss */
+		.special-offer__item-box {
+				margin-top: 25px; } }
+
+@media (max-width: 895px) {
+		/* line 720, D:/проекты/2022/Космический туризм/css/style.scss */
+		.header__top {
+				padding-top: 30px; }
+		/* line 723, D:/проекты/2022/Космический туризм/css/style.scss */
+		.menu-btn {
+				display: block; }
+		/* line 726, D:/проекты/2022/Космический туризм/css/style.scss */
+		.menu__list {
+				-webkit-transform: translateY(-150%);
+				        transform: translateY(-150%);
+				-webkit-transition: all 0.5s linear;
+				transition: all 0.5s linear;
+				display: block;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				right: 0;
+				padding-top: 90px;
+				padding-bottom: 30px;
+				background-color: #010203;
+				width: 100%;
+				text-align: center; }
+		/* line 741, D:/проекты/2022/Космический туризм/css/style.scss */
+		.menu__list.active {
+				-webkit-transform: translateY(0);
+				        transform: translateY(0); }
+		/* line 745, D:/проекты/2022/Космический туризм/css/style.scss */
+		.menu__item {
+				padding: 15px 0; }
+		/* line 748, D:/проекты/2022/Космический туризм/css/style.scss */
+		.menu__link {
+				display: block; }
+		/* line 751, D:/проекты/2022/Космический туризм/css/style.scss */
+		.phone, .login {
+				position: relative;
+				z-index: 20; }
+		/* line 756, D:/проекты/2022/Космический туризм/css/style.scss */
+		.header__content {
+				margin: 0 auto; }
+		/* line 760, D:/проекты/2022/Космический туризм/css/style.scss */
+		.header__description {
+				-webkit-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center; }
+		/* line 764, D:/проекты/2022/Космический туризм/css/style.scss */
+		.header {
+				background-position: center right; }
+		/* line 768, D:/проекты/2022/Космический туризм/css/style.scss */
+		.how-to__box svg {
+				display: none; }
+		/* line 772, D:/проекты/2022/Космический туризм/css/style.scss */
+		.how-to__box-list {
+				display: block;
+				list-style: none; }
+		/* line 777, D:/проекты/2022/Космический туризм/css/style.scss */
+		.how-to__box-item {
+				padding-bottom: 30px;
+				text-align: left;
+				padding-left: 30px;
+				position: relative;
+				border-left: 1px solid #fff; }
+		/* line 785, D:/проекты/2022/Космический туризм/css/style.scss */
+		.how-to__box-item:last-child {
+				border-left: none; }
+		/* line 789, D:/проекты/2022/Космический туризм/css/style.scss */
+		.how-to__box-item::before {
+				content: "";
+				position: absolute;
+				left: -10px;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				background-color: #fff; }
+		/* line 799, D:/проекты/2022/Космический туризм/css/style.scss */
+		.services__inner {
+				display: block; }
+		/* line 803, D:/проекты/2022/Космический туризм/css/style.scss */
+		.services__box-list {
+				width: 100%;
+				margin-right: 0;
+				margin-bottom: 170px; }
+		/* line 809, D:/проекты/2022/Космический туризм/css/style.scss */
+		.services__buttons {
+				max-width: 500px;
+				width: auto;
+				margin: 0 auto; }
+		/* line 815, D:/проекты/2022/Космический туризм/css/style.scss */
+		.slick-slide img {
+				max-width: 100%; } }
+
+@media (max-width: 720px) {
+		/* line 821, D:/проекты/2022/Космический туризм/css/style.scss */
+		.services {
+				padding-bottom: 50px; }
+		/* line 824, D:/проекты/2022/Космический туризм/css/style.scss */
+		.slider__inner {
+				padding: 0; }
+		/* line 827, D:/проекты/2022/Космический туризм/css/style.scss */
+		.slider__description {
+				font-size: 18px;
+				line-height: 24px; }
+		/* line 831, D:/проекты/2022/Космический туризм/css/style.scss */
+		.info {
+				padding-bottom: 50px; } }
+
+@media (max-width: 640px) {
+		/* line 837, D:/проекты/2022/Космический туризм/css/style.scss */
+		.header__title {
+				font-size: 34px;
+				line-height: 30px; }
+		/* line 841, D:/проекты/2022/Космический туризм/css/style.scss */
+		.header__title span {
+				font-size: 60px; }
+		/* line 844, D:/проекты/2022/Космический туризм/css/style.scss */
+		.header__content {
+				text-align: center; }
+		/* line 848, D:/проекты/2022/Космический туризм/css/style.scss */
+		.header__text {
+				-webkit-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
+				font-size: 18px; }
+		/* line 852, D:/проекты/2022/Космический туризм/css/style.scss */
+		.header__text p {
+				padding: 0 10px; }
+		/* line 855, D:/проекты/2022/Космический туризм/css/style.scss */
+		.header__btn {
+				font-size: 18px;
+				line-height: 24px;
+				width: 60%; }
+		/* line 860, D:/проекты/2022/Космический туризм/css/style.scss */
+		.header__description {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-pack: end;
+				    -ms-flex-pack: end;
+				        justify-content: flex-end;
+				margin-top: 40px;
+				margin-bottom: 5%; }
+		/* line 867, D:/проекты/2022/Космический туризм/css/style.scss */
+		.header__description-text + .header__description-text {
+				margin-left: 0;
+				margin-top: 20px; }
+		/* line 871, D:/проекты/2022/Космический туризм/css/style.scss */
+		.title {
+				padding: 50px 0;
+				font-size: 38px;
+				line-height: 38px; }
+		/* line 876, D:/проекты/2022/Космический туризм/css/style.scss */
+		.about__item {
+				padding-bottom: 50px; }
+		/* line 879, D:/проекты/2022/Космический туризм/css/style.scss */
+		.about__table-tr:first-child {
+				display: none; }
+		/* line 882, D:/проекты/2022/Космический туризм/css/style.scss */
+		.about__table-td {
+				display: block;
+				text-align: right;
+				border-bottom: 1px solid #fff; }
+		/* line 888, D:/проекты/2022/Космический туризм/css/style.scss */
+		.about__table-td:last-child {
+				border: none; }
+		/* line 892, D:/проекты/2022/Космический туризм/css/style.scss */
+		.about__table-td span {
+				display: inline-block; }
+		/* line 896, D:/проекты/2022/Космический туризм/css/style.scss */
+		.about__table-td::before {
+				content: attr(aria-label);
+				float: left; }
+		/* line 901, D:/проекты/2022/Космический туризм/css/style.scss */
+		.about__table-tr + .about__table-tr {
+				font-size: 20px;
+				line-height: 22px;
+				font-weight: 400; }
+		/* line 907, D:/проекты/2022/Космический туризм/css/style.scss */
+		.to-book {
+				background-position: top left; }
+		/* line 911, D:/проекты/2022/Космический туризм/css/style.scss */
+		.contacts__gurantees-img {
+				width: 100vw; }
+		/* line 915, D:/проекты/2022/Космический туризм/css/style.scss */
+		.contacts__gurantees {
+				width: 100%; }
+		/* line 919, D:/проекты/2022/Космический туризм/css/style.scss */
+		.services__title {
+				font-size: 18px; } }
+
+@media (max-width: 570px) {
+		/* line 925, D:/проекты/2022/Космический туризм/css/style.scss */
+		.footer__inner {
+				display: block; }
+		/* line 928, D:/проекты/2022/Космический туризм/css/style.scss */
+		.footer__text {
+				width: 100%;
+				margin-right: 0%; }
+		/* line 933, D:/проекты/2022/Космический туризм/css/style.scss */
+		.footer__text p + p {
+				margin-top: 10px;
+				margin-bottom: 30px; }
+		/* line 937, D:/проекты/2022/Космический туризм/css/style.scss */
+		.footer__menu, .footer__links {
+				margin-right: 0;
+				width: 100%; }
+		/* line 941, D:/проекты/2022/Космический туризм/css/style.scss */
+		.footer__menu {
+				margin-bottom: 50px; } }
+
+@media (max-width: 480px) {
+		/* line 947, D:/проекты/2022/Космический туризм/css/style.scss */
+		.title {
+				font-size: 28px;
+				line-height: 28px; }
+		/* line 952, D:/проекты/2022/Космический туризм/css/style.scss */
+		.special-offer__new-price {
+				font-size: 34px;
+				line-height: 44px; }
+		/* line 956, D:/проекты/2022/Космический туризм/css/style.scss */
+		.services__box-list {
+				font-size: 16px;
+				line-height: 26px; }
+		/* line 960, D:/проекты/2022/Космический туризм/css/style.scss */
+		.special-offer__item-box {
+				padding: 20px 10px; }
+		/* line 964, D:/проекты/2022/Космический туризм/css/style.scss */
+		.to-book__title, .services__title {
+				font-size: 23px; }
+		/* line 968, D:/проекты/2022/Космический туризм/css/style.scss */
+		.slider__arrow {
+				opacity: 0; }
+		/* line 972, D:/проекты/2022/Космический туризм/css/style.scss */
+		.contacts__gurantees-text {
+				font-size: 18px;
+				line-height: 26px;
+				width: 100vw; }
+		/* line 977, D:/проекты/2022/Космический туризм/css/style.scss */
+		.contacts__guarantees-img {
+				width: 100%; }
+		/* line 982, D:/проекты/2022/Космический туризм/css/style.scss */
+		.contacts__gurantees {
+				width: 100%; } }
+
+@media (max-width: 375px) {
+		/* line 989, D:/проекты/2022/Космический туризм/css/style.scss */
+		.services__btn--first::before {
+				bottom: 63px; } }
+
+@media (max-width: 360px) {
+		/* line 995, D:/проекты/2022/Космический туризм/css/style.scss */
+		.header__top {
+				-ms-flex-wrap: wrap;
+				    flex-wrap: wrap; }
+		/* line 998, D:/проекты/2022/Космический туризм/css/style.scss */
+		.phone {
+				width: 100%;
+				margin-right: auto;
+				margin-top: 0;
+				text-align: center; }
+		/* line 1005, D:/проекты/2022/Космический туризм/css/style.scss */
+		.menu, .login {
+				-webkit-box-ordinal-group: 0;
+				    -ms-flex-order: -1;
+				        order: -1; }
+		/* line 1009, D:/проекты/2022/Космический туризм/css/style.scss */
+		.menu__list {
+				padding-top: 110px; }
+		/* line 1013, D:/проекты/2022/Космический туризм/css/style.scss */
+		.header__title {
+				font-size: 28px; }
+		/* line 1017, D:/проекты/2022/Космический туризм/css/style.scss */
+		.header__title span {
+				font-size: 32px; }
+		/* line 1021, D:/проекты/2022/Космический туризм/css/style.scss */
+		.header__btn {
+				width: 100%;
+				line-height: 24px;
+				font-size: 14px; }
+		/* line 1026, D:/проекты/2022/Космический туризм/css/style.scss */
+		.contacts__gurantees-text {
+				font-size: 18px;
+				line-height: 26px;
+				width: 100vw; }
+		/* line 1031, D:/проекты/2022/Космический туризм/css/style.scss */
+		.contacts__gurantees {
+				width: 100vw; } }
+/*# sourceMappingURL=style.css.map */
